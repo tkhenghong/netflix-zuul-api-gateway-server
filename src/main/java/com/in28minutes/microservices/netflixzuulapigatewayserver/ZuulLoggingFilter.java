@@ -9,6 +9,9 @@ import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 
+// From now on, if you wish your request go through this gateway, you must type http://localhost:{port of this server}/{application-name}/{uri}
+// For example, http://localhost:8765/currency-exchange-service/currency-exchange/from/AUD/to/INR
+// http://localhost:8765/currency-conversion-service/currency-converter-feign/from/USD/to/INR/quantity/564
 @Component
 public class ZuulLoggingFilter extends ZuulFilter {
 
